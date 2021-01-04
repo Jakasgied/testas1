@@ -1,14 +1,25 @@
+import java.util.Scanner;
+
 public class Bandymas {
     public static void  main(String []args) {
-        String x;
-        x = "labas";
+        String vardas;
+        double ugis;
+        int amzius;
 
-        int y;
-        y=3;
-        int z;
-        z=2;
-        int sum;
-        sum= y + z;
-        System.out.println(sum);
+        Scanner klaviatura = new Scanner(System.in);
+
+
+        System.out.println("Iveskite savo varda");
+        vardas = klaviatura.nextLine ();
+
+        System.out.println("Iveskite savo amziu");
+        amzius = klaviatura.nextInt ();
+
+        System.out.println("Iveskite savo ugi metrais");
+        ugis = klaviatura.nextDouble ();
+
+        System.out.println("Jusu ugis yra "+ugis);
+        System.out.println("Jusu amzius yra "+amzius);
+        System.out.println("Jusu vardas yra "+vardas);
     }
 }
